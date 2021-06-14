@@ -198,6 +198,10 @@ body{
     margin-bottom: 0
 }
 
+.msg {
+    color: red;
+}
+
 .product-deatil .name small {
     display: block
 }

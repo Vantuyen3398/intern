@@ -10,3 +10,7 @@ Samsung Galaxy S21-Plus,2,20990000,samsung-galaxy-s21-plus.jpg
 Xiaomi-mi-11,4,6990000,xiaomi-mi-11.jpg
 Xiaomi-mi-11-LITE,4,19990000,xiaomi-mi-11-lite.jpg
 Xiaomi Redmi Note 10,4,5090000,xiaomi-redmi-note-10.jpg
+,1,,
+,1,,
+,1,,
+,1,,

@@ -42,16 +42,13 @@
 						$cate_name = $_POST['category_name'];
 						$price = trim($_POST['price']);
 						$image = $_FILES['image']['name'];
-						if(!empty($name && $cate_name && $price && $image))
-						{
+						if (!empty($name || $cate_name || $price || $image)) {
 							$add_product = $pd -> add_product($name, $cate_name, $price, $image,);
 							if($add_product == true){
-								$alert = "Add Product Success Fully!";
+								$msg = "Add Product Success Fully!";
 							}
-						}
-						else
-						{	
-							$alert = "Field must not be empty";
+						} else {	
+							$msg = "Field must not be empty";
 						}
 					}
 					include 'view/backend/add_product.php';

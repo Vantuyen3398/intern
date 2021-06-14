@@ -1,6 +1,5 @@
 <!-- <?php 
 	session_start();
-	include 'controller/frontend_controller.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -17,9 +16,6 @@
 <a href="index.php?action=home&category_id=1">Apple</a>
   |	<a href="index.php?action=home&category_id=2">Samsung</a>
   |	<a href="index.php?action=home&category_id=3">Oppo</a>
-	<?php 
-      $controller = new FrontendController();
-      $controller->handleRequest();
-    ?>
+	
 </body>
 </html> -->

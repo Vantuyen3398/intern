@@ -26,16 +26,21 @@
 								$avatar = $_FILES['avatar']['name'];
 							}
 							$role = $_POST['role'];
-
-							$user = new ModelUser();
-							$errorExistUser = '';
-							$checkExistUser = $user->checkExistUser($email, $username);
-							if ($checkExistUser != false) {
-								$errorExistUser = 'Exist email or username';
-							}else
-								{
-									if ($user->add_user($name, $email, $username, $password, $created,$avatar,$role) === True) {}
-								}
+							if (empty( $name || $email || $username || $password)) {
+								$msg = "Field must not be empty.";
+							} else {
+								$user = new ModelUser();
+								$errorExistUser = '';
+								$checkExistUser = $user->checkExistUser($email, $username);
+								if ($checkExistUser != false) {
+									$msg = 'Exist email or username';
+								}else
+									{
+										if ($user->add_user($name, $email, $username, $password, $created,$avatar,$role) === True) {
+											$msg = "Add User SuccessFully!";
+										}
+									}
+							}
 						}
 					include'view/backend/add_user.php';
 					break;

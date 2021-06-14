@@ -5,6 +5,11 @@
           <div class="box box-primary">
             <div class="box-header with-border">
               <h3 class="box-title">Add user</h3>
+              <?php  
+                if (isset($_POST['add_user'])) {
+                  echo "<p>$msg</p>";
+                }
+              ?>
             </div>
             <!-- /.box-header -->
             <!-- form start -->

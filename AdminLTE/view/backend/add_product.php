@@ -7,7 +7,7 @@
               <h3 class="box-title">Add product</h3>
               <?php  
                 if (isset($_POST['name']) ) {
-                    echo "<p>$alert</p>";
+                    echo "<p>$msg</p>";
                 }
               ?>
             </div>
