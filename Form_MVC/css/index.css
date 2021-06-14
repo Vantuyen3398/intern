@@ -1,0 +1,47 @@
+.container{
+	width: 100%;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+.top-bar{
+	display: flex;
+	justify-content: space-around;
+}
+.row{
+	display: flex;
+}
+.menu{
+	display: flex;
+}
+.menu  a{
+	text-decoration: none;
+	color: lightseagreen;
+}
+.menu li{
+	margin-left: 5rem;
+}
+.menu li:hover{
+	border: 1px solid grey;
+	background-color: lightgray;
+	padding:2px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	border: none;
+}
+.infor{
+	display: flex;
+}
+.infor li{
+	margin-right: 5rem;
+	color: lightseagreen;
+}
+
+.infor a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+
