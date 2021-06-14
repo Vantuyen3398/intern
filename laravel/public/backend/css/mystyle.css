@@ -1,0 +1,15 @@
+.btn-danger {
+	width: 75px;
+}
+.btn-primary {
+	width: 75px;
+}
+.w-5 {
+	display: none;
+}
+p.text-sm {
+    display: none;
+}
+.hidden {
+	display: none;
+}

@@ -1,0 +1,272 @@
+img{
+	display: block;
+	max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.btn{
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+}
+
+/* ---Menu__reponsive----- */
+.topnav{
+	display: none;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* ------------------------------------------- */
+.container-fluid{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.container{
+	width: 68%;
+	margin: 0 auto;
+}
+
+.top-bar .container{
+	position: relative;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-bar .row:first-child{
+	padding: 1.8rem 6.3rem 5.5rem 6.3rem;
+	justify-content: space-between;
+}
+
+.top-bar__left{
+	display: flex;
+	color: #444444;
+	font-size: 1rem;
+}
+
+.top-bar__left i{
+	color: #d7bd73;
+	margin: 0.7rem;
+}
+
+.top-bar__left li:first-child{
+	margin-right: 3rem;
+}
+
+.top-bar__left span{
+	color: black;
+	font-weight: normal;
+}
+
+.top-bar__right{
+	display: flex;
+	margin-top: 0.5rem;
+	justify-content: space-between;
+}
+
+.top-bar__right a{
+	color: #313131;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.top-bar__right li:not(:last-of-type){
+	margin-right: 3.5rem;
+}
+
+.top-bar .row:last-child{
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	height: 8rem;
+
+	align-items: center;
+	bottom: -50%;
+	background-color: #1c2f4d;
+
+	padding-right: 6.3rem;
+	padding-left: 6.3rem;
+	border-radius: 0rem 5rem 5rem 0rem;
+}
+
+.top-bar .row:last-child .col:first-child p a{
+	font-size: 2rem;
+	color: #ffffff;
+	font-family: "Poppins";
+	font-weight: bold;
+}
+
+.top-bar__social--icon{
+	display: flex;
+}
+
+.top-bar__social--icon li{
+	display: table;
+	width: 2.9rem;
+	height: 2.9rem;
+	border-radius: 50%;
+	background-color: #273956;
+}
+
+.top-bar__social--icon li:not(:last-child){
+	margin-right: 2px;
+}
+
+.top-bar__social--icon a{
+	font-size: 1rem;
+	color: #dddddd;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.top-bar__social--icon .a1:hover{
+	background-color: #0033FF	;
+}
+
+.top-bar__social--icon .a2:hover{
+	background-color: #FF3300	;
+}
+
+.top-bar__social--icon .a3:hover{
+	background-color: #00CCFF	;
+}
+.top-bar__social--icon .a4:hover{
+	background-color: #0099FF;
+}
+
+.top-bar__social--icon .a5:hover{
+	background-color: #FF0000	;
+}
+
+.top-bar .row:last-child .col:first-child{
+	margin-right: 10rem;
+}
+
+.top-bar .row:last-child .col:nth-of-type(3){
+	width: 45%;
+	margin-left: 2rem;
+	margin-right: 1.5rem;
+}
+
+.search-form{
+	position: relative;
+}
+
+.search-form select{
+	border-radius: 4rem;
+	box-sizing: border-box;
+	padding: 1rem 3rem;
+	height: 4rem;
+	outline: none;
+	border: none;
+	position: absolute;
+	left: 0px;
+
+	background-color: #d7bd73;
+	color: #ffffff;
+	font-family: "Poppins", sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.search-form span{
+	position: absolute;
+	font-size: 1.5rem;
+	margin-left: 9rem;
+	margin-top: 0.9rem;
+	color: white;
+}
+
+.search-form select:hover{
+	background-color: lightslategray;
+}
+
+.top-bar__input--search{
+	border: 0.2rem solid #909090;
+	border-radius: 4rem;
+	padding: 1rem 6.4rem 1rem 12rem;
+	box-sizing: border-box;
+	outline: none;
+	
+	font-size: 1.1rem;
+	font-family: "Poppins";
+	background: none;
+	color: #ececec;
+
+	width: 100%;
+	height: 4rem;
+}
+
+.search-form button{
+	box-sizing: border-box;
+	width: 4rem;
+	height: 4rem;
+	border: none;
+	border-radius: 50%;
+
+	color: #ffffff;
+	background-color: #909090;
+
+	position: absolute;
+	right: 0rem;
+}
+
+.btn--login{
+	border-radius: 3rem;
+	height: 4rem;
+	border: 0.2rem solid #ffffff;
+	padding: 1rem 2.2rem 1rem 2.2rem;
+
+	background-color: #1c2f4d;
+	color: #d7bd73;
+
+	font-family: "Poppins";
+	font-size: 1rem;
+	font-weight: bold;
+	outline: none;
+}
+

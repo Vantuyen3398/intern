@@ -1,0 +1,12 @@
+IP 12,1,23360000,ip12.jpg
+IP 12 PRO,1,28890000,iphone-12-pro.jpg
+IP 12 PROMAX,1,36540000,iphone-12pro-max.jpg
+OPPO A54,3,4690000,oppo-a54.jpg
+OPPO A94,3,7690000,oppo-a94.jpg
+OPPO A74,3,6390000,oppo-a74.jpg
+Samsung Galaxy A52,2,9340000,samsung-galaxy-a52.jpg
+Samsung Galaxy S20,2,20990000,samsung-galaxy-s20.jpg
+Samsung Galaxy S21-Plus,2,20990000,samsung-galaxy-s21-plus.jpg
+Xiaomi-mi-11,4,6990000,xiaomi-mi-11.jpg
+Xiaomi-mi-11-LITE,4,19990000,xiaomi-mi-11-lite.jpg
+Xiaomi Redmi Note 10,4,5090000,xiaomi-redmi-note-10.jpg
