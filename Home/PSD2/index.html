@@ -1,239 +1,820 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>PSD-2</title>
-	<link rel="shortcut icon" href="images/icon/logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/dd35a6f30f.js" crossorigin="anonymous"></script>
-	
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <title>Education</title>
 </head>
+
 <body>
-	
-	<header>
-		<section class="top-bar">
-			<div class="container">
 
-			    <div class="row">
-				    <div class="col">
-					    <ul class="top-bar__left">
-					    	<li>
-					    		<i class="fa fa-map-marker-alt">
-								<span>503 Old Buffalo Street New York-3087
-								</span>
-							</i>
-					    	</li>
-					    	<li>
-					    		<i class="fa fa-phone-alt">
-								<span>+1 212-226-3126
-								</span>
-							</i>
-					    	</li>
-					    	<li>
-					    		<i class="fa fa-envelope">
-								<span>usename@domain.com
-								</span>
-							</i>
-					    	</li>
-					    </ul>
-				    </div>
-				    <div class="col">
-						<ul class="top-bar__right">
-							<li>
-								<p>Follow Us.</p>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-facebook"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-google-plus"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-twitter"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-instagram"></i>
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="fa fa-youtube"></i>
-								</a>
-							</li>
-						</ul>
-				    </div>
-				</div>
+    <header>
+        <nav class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="top-bar__title">
+                            <p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>&nbsp;&nbsp;503 Old
+                                Buffalo Street
+                                New York-3087</p>
+                            <p><span><i class="fa fa-phone" aria-hidden="true"></i></span>&nbsp;&nbsp;+1 212-226-3126
+                            </p>
+                            <p><span><i class="fa fa-envelope"
+                                        aria-hidden="true"></i></span>&nbsp;&nbsp;username@domain.com</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="top-bar__social">
+                            <p>Follow Us:</p>
+                            <ul class="top-bar__social--list">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
 
-				<div class="row">
-					<div class="col">
-						<h1><a href="#">LOGO</a></h1>
-					</div>
-					<div class="col">
-						<ul class="menu">
-							<li><a href="#">HOME</a></li>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">SERVICES</a></li>
-							<li><a href="#">CASE STUDIES</a></li>
-							<li><a href="#">PAGES</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">CONTACT</a></li>
-						</ul>
-					</div>
-					<div class="col">
-						<button class="btn btn__login">
-							<i class="fa fa-sign-out-alt">
-							    <span>LOGIN & REGISTER</span>
-						    </i>
-						</button>
-					</div>
-				</div>
+                    </div>
+                </div>
+                <div class="row" id="myTopnav">
+                    <div class="col">
+                        <a href="#">LOGO</a>
+                    </div>
+                    <div class="col">
+                        <ul class="top-bar__menu--list">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">CASE STUDIES</a></li>
+                            <li><a href="#">PAGES</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-login">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;&nbsp;LOGIN & REGISTER
+                        </button>
+                    </div>
 
-			</div>
-		</section>
-	</header>
+                    <button class="nut" onclick="openNav()"><i class="fa fa-bars"></i></button>
+                </div>
+            </div>
+        </nav>
 
-	<main>
+    </header>
+    <main>
+        <section class="slider">
+            <div class="slider__container">
+                <img src="images/slider-background-01.png" alt="slider-01" class="slider-x">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1>
+                                Education is the <span>Foundation Upon</span> which we Build our Future
+                            </h1>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-more">
+                                MORE INFORMATION
+                            </button>
+                            <button class="btn btn-start">
+                                START ONLINE CASES
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
-		<section class="slider">
-			<div class="container-fluid">
-				<img src="images/slider.jpg" alt="">
-				<h2>Education is the<br> <span>Foundation Upon</span> which<br> we Build our Future</h2>
-				<button class="btn btn__slider--left">
-					<span>MORE INFORMATION</span>
-				</button>
-				<button class="btn btn__slider--right">
-					<span>START ONLINE CASES</span>
-				</button>
-			</div>
-		</section>
+                <div class="activities">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <div class="activities__content">
+                                    <img src="images/activities-01.png" alt="activities-01">
+                                    <p>Business & Management</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="activities__content">
+                                    <img src="images/activities-02.png" alt="activities-02">
+                                    <p>File Sharing Management</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="activities__content">
+                                    <img src="images/activities-03.png" alt="activities-03">
+                                    <p>Online Courses for Kids</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="activities__content">
+                                    <img src="images/activities-04.png" alt="activities-04">
+                                    <p>Online Products for Sale</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="activities__content">
+                                    <img src="images/activities-05.png" alt="activities-05">
+                                    <p>Exports Working Together</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-		<section class="activ">
-			<div class="container">
-				<div class="row">
-					<div class="col acti1">
-						<div class="activ__container ">
-							<a href="#">
-								<img src="images/acti1.jpg" alt="">
-							</a>
-							<h4>Business &#38; Mangements</h4>
-						</div>
-					</div>
-					<div class="col acti2">
-						<div class="activ__container ">
-							<a href="#">
-								<img src="images/acti2.jpg" alt="">
-							</a>
-							<h4>File Sharing Management</h4>
-						</div>
-					</div>
-					<div class="col acti3">
-						<div class="activ__container ">
-							<a href="#">
-								<img src="images/acti1.jpg" alt="">
-							</a>
-							<h4>Online Courses for Kids</h4>
-						</div>
-					</div>
-					<div class="col acti4">
-						<div class="activ__container ">
-							<a href="#">
-								<img src="images/acti4.jpg" alt="">
-							</a>
-							<h4>Online Products for Sale</h4>
-						</div>
-					</div>
-					<div class="col acti5">
-						<div class="activ__container ">
-							<a href="#">
-								<img src="images/acti5.jpg" alt="">
-							</a>
-							<h4>Experts Working Together</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            </div>
+        </section>
+        <section class="meet-friends">
+            <div class="container">
+                <div class="row">
+                    <div class="meet-friends__heading">
+                        <h2>Meet Friends and <span>Study with Experts</span></h2>
+                        <p>voluptas sit aspernatur aut odit aut fugit, sed quias consequuntur luptatem sequi nesciunt
+                            voluptas sit.</p>
+                    </div>
+                </div>
 
-		<section class="meet__friends">
-			<img src="images/bg_meetfriends.jpg" alt="">
-			<div class="container">
-				<div class="row">
-					<div class="meet-header">
-						<h2>Meet Friends and <span>Study with Experts</span></h2>
-						<p>voluptas sit aspernatur aut fugit, sed quias consequuntur<br> luptatem sequi nesciunt voluptas sit.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div class="meet-friends__content--left">
-							<div class="content__left">
-								<div class="left--box">
-									<img src="images/icon/library.jpg" alt="">
-								</div>
-								<div class="content--box">
-									<h4>Online Book Library</h4>
-									<p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit.</p>
-								</div>
-							</div>
-							<div class="content__left">
-								<div class="left--box">
-									<img src="images/icon/unifi.jpg" alt="">
-								</div>
-								<div class="content--box">
-									<h4>Certificate Unifi Usg</h4>
-									<p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit.</p>
-								</div>
-							</div>
-							<div class="content__left">
-								<div class="left--box">
-									<img src="images/icon/working.jpg" alt="">
-								</div>
-								<div class="content--box">
-									<h4>Experts Working</h4>
-									<p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit.</p>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="meet-friends__content--right">
-							<div class="content__right">
-								<img src="images/icon/deviation.jpg" alt="">
-								<h4>Standard Deviation</h4>
-								<p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit.</p>
-							</div>
-							<div class="content__right">
-								<img src="images/icon/offered.jpg" alt="">
-								<h4>Courses offered</h4>
-								<p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit.</p>
-							</div>
-							<div class="content__right">
-								<img src="images/icon/goals.jpg" alt="">
-								<h4>Smart Goals</h4>
-								<p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+                <div class="row">
+                    <div class="col">
+                        <div class="meet-friends__container">
+                            <div class="col">
+                                <div class="meet-friends__text">
+                                    <h4>Online Book Library</h4>
+                                    <p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit</p>
+                                </div>
+                                <div class="meet-friends__img">
+                                    <img src="images/meet-01.png" alt="online-book-library">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="meet-friends__text">
+                                    <h4>Certificate Unifi Usg</h4>
+                                    <p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit</p>
+                                </div>
+                                <div class="meet-friends__img">
+                                    <img src="images/meet-02.png" alt="Certificate-unifi-usg">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="meet-friends__text">
+                                    <h4>Expert Working</h4>
+                                    <p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit</p>
+                                </div>
+                                <div class="meet-friends__img">
+                                    <img src="images/meet-03.png" alt="Expert-working">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="meet-friends__container">
+                            <div class="col">
+                                <div class="meet-friends__text">
+                                    <h4>Standard Deviation</h4>
+                                    <p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit</p>
+                                </div>
+                                <div class="meet-friends__img">
+                                    <img src="images/meet-04.png" alt="standard deviation">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="meet-friends__text">
+                                    <h4>Courses Offered</h4>
+                                    <p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit</p>
+                                </div>
+                                <div class="meet-friends__img">
+                                    <img src="images/meet-05.png" alt="courses-offered">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="meet-friends__text">
+                                    <h4>Smart Goals</h4>
+                                    <p>Lorem ipsum dolor sit amet, cons adip nas ni nas nibh dilimes nsectetur elit</p>
+                                </div>
+                                <div class="meet-friends__img">
+                                    <img src="images/meet-06.png" alt="smart-goals">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/meet-background.png" alt="">
+        </section>
 
-	</main>
+        <section class="best-coaching">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="best-coaching__text">
+                            <h4>
+                                Hurry up Limited Seats Available
+                            </h4>
+                            <h2>
+                                Get the Best Coaching Trainng <span>Institute for Free</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="best-coaching__form">
+                            <form action="#">
+                                <input type="text" placeholder="Complate Name">
+                                <input type="email" placeholder="Email Address">
+                                <input type="text" placeholder="Phone No">
+                                <button class="btn btn-sign-up" type="submit">SIGN UP NOW</button>
+                            </form>
+                            <ul class="best-coaching__countdown--time">
+                                <li><span id="day"></span> DAY</li>
+                                <li><span id="hour"></span> HOUR</li>
+                                <li><span id="min"></span> MIN</li>
+                                <li><span id="sec"></span> SEC</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/best-coaching-backround.png" alt="best coaching background">
+        </section>
+
+        <section class="recent-courses">
+            <div class="container">
+                <div class="row">
+                    <div class="recent-courses__heading">
+                        <h2>Recent Courses</h2>
+                        <p>
+                            Films can shape the destiny of talented youngsters Courses.
+                        </p>
+                        <div class="dot">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="recent-courses__menu--filter" id="myBtnContainer">
+                            <button class="btn btn-menu active" onclick="filterSelection('all')">All Categories</button>
+                            <button class="btn btn-menu" onclick="filterSelection('art')">Art</button>
+                            <button class="btn btn-menu giua" onclick="filterSelection('exercise')">Exercise</button>
+                            <button class="btn btn-menu" onclick="filterSelection('design')">Material Design</button>
+                            <button class="btn btn-menu" onclick="filterSelection('music')">Music</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col filterDiv design exercise art">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 0)"
+                            onmouseout="eventOut(this, 0)">
+                            <div class="recent-courses__img">
+                                <a href="#"><img src="images/recent-courses-01.png" alt="recent-news-01"></a>
+                                <div class="recent-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="recent-courses__introduction">
+                                <h4>Design Instrument for Communication</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 1)"
+                            onmouseout="eventOut(this, 1)">
+                            <div class="recent-courses__img">
+                                <a href="#"><img src="images/recent-courses-05.png" alt="recent-news-01"></a>
+                                <div class="recent-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="recent-courses__introduction">
+                                <h4>Decision explained that the separate</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise music">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 2)"
+                            onmouseout="eventOut(this, 2)">
+                            <div class="recent-courses__img">
+                                <a href="#"><img src="images/recent-courses-03.png" alt="recent-news-01"></a>
+                                <div class="recent-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="recent-courses__introduction">
+                                <h4>Technology to create Immersive Teaching</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv exercise music">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 3)"
+                            onmouseout="eventOut(this, 3)">
+                            <div class="recent-courses__img">
+                                <a href="#"><img src="images/recent-courses-03.png" alt="recent-news-01"></a>
+                                <div class="recent-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="recent-courses__introduction">
+                                <h4>Wild Rose School Division Adopted</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv design art music">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 4)"
+                            onmouseout="eventOut(this, 4)">
+                            <div class="recent-courses__img">
+                                <a href="#"><img src="images/recent-courses-05.png" alt="recent-news-01"></a>
+                                <div class="recent-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="recent-courses__introduction">
+                                <h4>The Rights of students or Faculty within School</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col filterDiv art">
+                        <div class="recent-courses__container" onmouseover="eventHover(this, 5)"
+                            onmouseout="eventOut(this, 5)">
+                            <div class="recent-courses__img">
+                                <a href="#"><img src="images/recent-courses-01.png" alt="recent-news-01"></a>
+                                <div class="recent-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="recent-courses__introduction">
+                                <h4>Sickening about a case the Supreme</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-view-all">
+                        VIEW ALL CASSES
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-testimonials">
+            <div class="container-fuild">
+                <div class="row">
+                    <div class="col">
+                        <div class="subscribe__img">
+                            <img src="images/subscribe-icon.png" alt="icon-subscribe">
+                        </div>
+                        <div class="subscribe__content">
+                            <h3>Subscribe to our Newsletter</h3>
+                            <p>subscribe newsletter and get special and new updates and notifications</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter Your Email Address">
+                                <button class="btn btn-subscribe">SUBSCRIBE</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="testimonials__slider">
+                            <button class="btn btn-prev" onclick="plusSlides(-1)">&#10094;</button>
+                            <button class="btn btn-next" onclick="plusSlides(1)">&#10095;</button>
+                            <img src="images/carousel01.png" alt="avatar" class="mySlides">
+                            <img src="images/carousel02.png" alt="avatar" class="mySlides">
+                            <img src="images/carousel03.png" alt="avatar" class="mySlides">
+                            <img src="images/testimonials-dau-phay.png" alt="dau-phay">
+                        </div>
+                        <div class="testimonials__content">
+                            <h3>Testimonials</h3>
+                            <p>Lorem ipsum dolor sit amet, cons adipis
+                                som nas nibh dolor, m lorime uilimes
+                                nsectetur elit ipsum is.
+                            </p>
+                            <div class="testimonials__user">
+                                <h5>Lophie James</h5>
+                                <p>Graphic Designer</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <h3>Testimonials</h3>
+                            <p>Dolore voluptate dolor magna anim culpa
+                                consectetur proident laborum duis
+                                exercitation
+                                anim aute.
+                            </p>
+                            <div class="testimonials__user">
+                                <h5>Elizabeth St.</h5>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                        <div class="testimonials__content">
+                            <h3>Testimonials</h3>
+                            <p>Voluptate ad minim ad sint ipsum ea elit exercitation non. laborum duis exercitation anim
+                                culpa ime.
+                            </p>
+                            <div class="testimonials__user">
+                                <h5>Tom Hanks</h5>
+                                <p>Actor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="video">
+            <div class="container">
+                <!--  -->
+                <div id="light">
+                    <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                    <video id="VisaChipCardVideo" controls>
+                        <source src="video/Swagger.mp4" type="video/mp4">
+                        <!--Browser does not support <video> tag -->
+                    </video>
+                </div>
+                <div id="fade" onClick="lightbox_close();"></div>
+                <!--  -->
+                <img src="images/video-backround.png" alt="background-video">
+                <h3>Best Online Teaching and Assistant Courses</h3>
+                <img src="images/video-icon.png" alt="icon-video" onclick="lightbox_open();">
+
+
+            </div>
+            <img src="images/man.png" alt="man">
+        </section>
+
+
+        <section class="recent-news">
+            <div class="container">
+                <div class="row">
+                    <div class="recent-news__heading">
+                        <h2>Recent News</h2>
+                        <p>Films can shape the destiny of talented youngsters Courses.</p>
+                        <div class="dot">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="recent-news__container">
+                            <div class="recent-news__img">
+                                <a href="#"><img src="images/recent-news-01.png" alt="recent-news-01"></a>
+                                <span>21 JAN, 2018</span>
+                            </div>
+                            <div class="recent-news__introduction">
+                                <h4>Good Intentions or Good Results?</h4>
+                                <p>Lorem ipsum dolor sit amet, cons adipissom nas nibh dolor, m lorime ulilimes
+                                    nsectetur eli nas nibh dilimes nsectetur elit.</p>
+                                <p>Posted By: <span>James Smith</span></p>
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="recent-news__container">
+                            <div class="recent-news__img">
+                                <a href="#"><img src="images/recent-news-02.png" alt="recent-news-01"></a>
+                                <span>21 JAN, 2018</span>
+                            </div>
+                            <div class="recent-news__introduction">
+                                <h4>Good Intentions or Good Results?</h4>
+                                <p>Lorem ipsum dolor sit amet, cons adipissom nas nibh dolor, m lorime ulilimes
+                                    nsectetur eli nas nibh dilimes
+                                    nsectetur elit.</p>
+                                <p>Posted By: <span>James Smith</span></p>
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="recent-news__container">
+                            <div class="recent-news__img">
+                                <a href="#"><img src="images/recent-news-03.png" alt="recent-news-01"></a>
+                                <span>21 JAN, 2018</span>
+                            </div>
+                            <div class="recent-news__introduction">
+                                <h4>Good Intentions or Good Results?</h4>
+                                <p>Lorem ipsum dolor sit amet, cons adipissom nas nibh dolor, m lorime ulilimes
+                                    nsectetur eli nas nibh dilimes
+                                    nsectetur elit.</p>
+                                <p>Posted By: <span>James Smith</span></p>
+                                <a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-view-all">VIEW ALL BLOG</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-opportunity">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="best-opportunity__introduction">
+                            <h2>BEST <span>OPPORTUNITY</span> TO START A BUSINESS</h2>
+                            <p>voluptas sit aspernatur aut odit aut fugit, sed quias conseq magni dolores eos qui
+                                ratione
+                                volust luptatem sequi nesciu ptas sit aspernatur aut odit aut fugit, sed quias
+                                consequunt
+                                volust luptatem sequi nesciunt</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <ul class="best-opportunity__list">
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;Complex human endeavor ultimately</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;A practical profession Requiring</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;regardless of undergraduate specialization</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;Best features of Australian education</li>
+                            <li><span>&#8594;</span>&nbsp;&nbsp;&nbsp;Flexible educational system</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="images/best-opportunity-background.png" alt="best-opportunity">
+        </section>
+        <section class="fun-facts" id="fun">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                260
+                            </h4>
+                            <p>Upcoming Evenets</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                1260
+                            </h4>
+                            <p>Online Courses</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                180
+                            </h4>
+                            <p>Education Staff</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fun-facts__content">
+                            <h4 class="value">
+                                1800
+                            </h4>
+                            <p>Complete Projects</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img src="images/fun-facts-background.png" alt="fun-background">
+        </section>
+
+        <section class="popular-courses">
+            <div class="container">
+                <div class="row">
+                    <div class="popular-courses__heading">
+                        <h2>Popular Courses</h2>
+                        <p>Films can shape the destiny of talented youngsters, Courses.</p>
+                        <div class="dot">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="images/popular-courses-01.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Design Instrument for Communication</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="images/popular-courses-02.png" alt="recent-news-02"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Supreme Court Cases Related to Education</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="popular-courses__container">
+                            <div class="popular-courses__img">
+                                <a href="#"><img src="images/popular-courses-03.png" alt="recent-news-01"></a>
+                                <div class="popular-courses__number">
+                                    <p>Price: <span>$85</span></p>
+                                    <p><i class="fa fa-users" aria-hidden="true"></i> 220</p>
+                                    <p><i class="fa fa-commenting" aria-hidden="true"></i> 12</p>
+                                </div>
+                            </div>
+                            <div class="popular-courses__introduction">
+                                <h4>Educational tools to prepare Students</h4>
+                                <ul class="rating">
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                </ul>
+                                <button class="btn btn-arrow">&#8594; <span>More Details</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="app-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="app-footer__about">
+                            <h4>About Information</h4>
+                            <p>Lorem ipsum dolor sit amet consetuer ilmi adipiscing elit diam, sed diam nonumy nibh
+                                euismod tincidunt</p>
+                            <ul class="app-footer__social--list">
+                                <li><a class="fa fa-facebook" href="#"></a></li>
+                                <li><a class="fa fa-twitter" href="#"></a></li>
+                                <li><a class="fa fa-google" href="#"></a></li>
+                                <li><a class="fa fa-vimeo" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="app-footer__subscribe">
+                            <h4>Subscribe Newsletter</h4>
+                            <p>Subscribe Email and Get new Updates and Notification.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Enter Your Email Address">
+                                <button type="submit">&#8594;</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="app-footer__touch">
+                            <h4>Get in Touch</h4>
+                            <div class="cha">
+                                <i class="fa fa-envelope"></i>
+                                <p>User@domain.com</p>
+                            </div>
+                            <div class="cha">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <p>+2390-875-2235</p>
+                            </div>
+                            <div class="cha">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <p>503 Old Buffalo Street Northwest
+                                    #205,
+                                    New York-3087</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <img src="images/footer-01.png" alt="footer-01">
+
+                    <img src="images/footer-02.png" alt="footer-02">
+
+
+                    <img src="images/footer-03.png" alt="footer-03">
+
+
+                    <img src="images/footer-04.png" alt="footer-04">
+
+                    <img src="images/footer-05.png" alt="footer-05">
+
+                    <img src="images/footer-06.png" alt="footer-06">
+                </div>
+            </div>
+            <div class="container-fluid">
+                <p><span>Logo - </span>Copyright 2018. Design by <span>Themextic</span></p>
+            </div>
+            <img src="images/footer-background.png" alt="footer">
+        </section>
+    </footer>
+    <script src="js/hover.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/filter-menu.js"></script>
 </body>
+
 </html>
