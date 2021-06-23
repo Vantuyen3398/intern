@@ -55,12 +55,12 @@
       					<li  class="nav-item">
       						<a class="nav-link" href="#">
       							<li>
-									@if (Auth::check())
-											{{Auth::User()->username}}
+									@if (session())
+										{{session()->get('name')}}
 									@endif
 								</li>
       						</a>
-      						<a class="nav-link" href="{{Auth::logout()}}">
+      						<a class="nav-link" href="{{URL::to('/logout')}}">
       							<li>
 									Logout
 								</li>

@@ -6,12 +6,9 @@ use App\Classes\UserClass;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Requests\StoreBlogPost;
 use Illuminate\Support\Facades\DB;
-
 use App\Models\User;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
 class UserController extends Controller
 {
     /**
